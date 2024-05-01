@@ -1,4 +1,162 @@
-.home {
-    min-height: calc(100vh - 50px);
-    background-color: red;
+.container {
+
+    // .section::after {
+    //     content: "";
+    //     position: absolute;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     height: 50px; 
+    //     background: linear-gradient(to bottom, rgba(18, 23, 35, 0), #27324c 100%);
+    // }
+    .home {
+        min-height: calc(100vh - 100px);
+        background-color: #121723;
+        color: white;
+        overflow-y: auto;
+      
+
+        .headerBody {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15%;
+
+        }
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .presentation {
+            animation: fadeIn 1.5s ease-out forwards;
+            margin-left: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+            gap: 5px;
+
+            h2,
+            h1 {
+                margin: 0;
+                font-size: 50px;
+                text-transform: uppercase;
+            }
+
+            button {
+                cursor: none;
+                text-decoration: none;
+                padding: 5px 13px 5px 13px;
+                background-color: transparent;
+                border: 1px solid #333;
+                color: white;
+                border-radius: 20px;
+                font-size: 20px;
+                box-shadow: 2px 2px 1px #333;
+
+                &:hover {
+                    background-color: #fff;
+                    color: #000;
+                    box-shadow: none;
+
+                }
+
+            }
+        }
+
+        .picture {
+            width: 30%;
+
+            img {
+                width: 15em;
+                height: 15em;
+                filter: brightness(120%) contrast(100%);
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+                border-radius: 50%;
+
+            }
+        }
+    }
+
+    //technologies PART 
+
+    .technologies {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 2%;
+        margin-top: 10%;
+
+    }
+
+    .react,
+    .angular,
+    .js,
+    .sql,
+    .nodeJs {
+        color: white;
+    }
+
+
+    .react:hover {
+        color: #61DAFB;
+        transition: 0.3s ease-in;
+    }
+
+    .angular:hover {
+        color: #DD0031;
+        transition: 0.3s ease-in;
+
+    }
+
+    .js:hover {
+        color: #F7DF1E;
+        transition: 0.3s ease-in;
+
+    }
+
+    .sql:hover {
+        color: #00758F;
+        transition: 0.3s ease-in;
+
+    }
+
+    .nodeJs:hover {
+        color: #339933;
+        transition: 0.3s ease-in;
+
+    }
+
+}
+
+@media only screen and (max-width: 820px) {
+    .container .home {
+        width: 100%;
+        font-size: 12px;
+
+    }
+
+    .container .home .presentation h1,
+    .container .home .presentation h2 {
+        font-size: 20px;
+    }
+
+    .container .home .presentation button {
+        padding: 2px 5px 2px 5px;
+        font-size: 10px;
+
+    }
+
+    .container .home .headerBody .picture img {
+        width: 12em;
+        
+    }
 }

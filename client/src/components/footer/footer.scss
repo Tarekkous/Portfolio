@@ -1,7 +1,20 @@
 .footer {
-    background-color: grey;
-    height: 50px;
+    background-color: #121723d4;
+    height: 150px;
     width: 100%;
-    position: absolute;
+    position: static;
     bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    .copyrights {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    .logo-c {
+        color: white;
+    }
 }
