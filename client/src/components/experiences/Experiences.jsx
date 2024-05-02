@@ -78,7 +78,7 @@ const Experiences = () => {
       </div>
       <div className="logo">
         <img src="/assets/digifab.png" alt="digifab" />
-        <img src="/assets/logoGeneva.png" alt="openGeneva" />
+        <img src="/assets/openGeneva.png" alt="openGeneva" />
       </div>
     </div>
   );

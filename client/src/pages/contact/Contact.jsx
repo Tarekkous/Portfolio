@@ -1,14 +1,32 @@
 import React, { useRef } from "react";
 import "../contact/contact.scss";
-import emailjs from '@emailjs/browser'
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
 
-const refForm = useRef()
+  const refForm = useRef();
 
-const sendEmail = (e) => {
-e.preventDefault()
-}
+  const sendEmail = (e) => {
+    e.preventDefault();
+  const formContact = refForm.current
+
+    emailjs
+      .sendForm(
+        'contact_service',
+        'contact_form',
+        formContact,
+        'YN7QS6vVPHfXvI5uY'
+      ).then(
+        () => {
+          alert('Message successfully sent!')
+          window.location.reload(false)
+        },
+        () => {
+          alert('Failed to send the message, please try again');
+        }
+      );
+     
+  };
 
   return (
     <div className="container">
