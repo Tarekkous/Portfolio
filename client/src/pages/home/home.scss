@@ -51,16 +51,15 @@
                 text-transform: uppercase;
             }
 
+        
             button {
-                cursor: none;
-                text-decoration: none;
-                padding: 5px 13px 5px 13px;
-                background-color: transparent;
-                border: 1px solid #333;
-                color: white;
-                border-radius: 20px;
+                margin-top: 5%;
+                padding: 10px;
+                border: 1px solid #fff;
                 font-size: 20px;
-                box-shadow: 2px 2px 1px #333;
+                background-color: transparent;
+                color: #fff;
+                cursor: none;
 
                 &:hover {
                     background-color: #fff;

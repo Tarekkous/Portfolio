@@ -1,5 +1,102 @@
 .contact {
     min-height: calc(100vh - 100px);
-    background-color: green;
-    
+    background-color: #121723;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        color: #fff;
+        margin-left: 2%;
+    }
+
+    ul {
+
+
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-bottom: 10px;
+            overflow: hidden;
+            position: relative;
+            opacity: 0;
+            animation: fadeIn 0.5s ease-in-out;
+            animation-fill-mode: forwards;
+
+            input:not([type="submit"]) {
+                height: 50px;
+                width: 50em;
+                background-color: #115173;
+
+            }
+            input {
+                color: white;
+                padding: 5px;
+                text-align: start;
+            }
+
+
+        }
+
+        li.half {
+            width: 50%;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            textarea {
+                width: 100%;
+                border: 0;
+                background-color: #115173;
+                height: 50px;
+                font-size: 12px;
+                color: #fff;
+                padding: 20px;
+                min-height: 150px;
+                box-sizing: border-box;
+            }
+        }
+
+
+    }
+
+    .flat-button {
+        color: #fff;
+        background: 0 0;
+        font: 11px;
+        letter-spacing: 3px;
+        text-decoration: none;
+        padding: 8px 10px;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        cursor: none;
+        font-weight: 500;
+        &:hover {
+            background-color: #fff;
+            color: #000;
+            box-shadow: none;
+
+        }
+
+    }
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
