@@ -14,7 +14,7 @@
         background-color: #121723;
         color: white;
         overflow-y: auto;
-      
+
 
         .headerBody {
             display: flex;
@@ -51,7 +51,7 @@
                 text-transform: uppercase;
             }
 
-        
+
             button {
                 margin-top: 5%;
                 padding: 10px;
@@ -140,12 +140,13 @@
     .container .home {
         width: 100%;
         font-size: 12px;
+        position: relative;
 
     }
 
     .container .home .presentation h1,
     .container .home .presentation h2 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .container .home .presentation button {
@@ -155,7 +156,18 @@
     }
 
     .container .home .headerBody .picture img {
+        position: absolute;
         width: 12em;
-        
+        height: 12em;
+        top: 40px;
+        right: 20px;
+
+    }
+
+    .container .section .home  .technologies {
+        margin-top: 25%;
+    }
+    .container .section {
+        margin-top: 20%;
     }
 }
