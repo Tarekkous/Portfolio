@@ -31,7 +31,7 @@ const Skills = () => {
         <span>Skills</span>
         <div className="front">
           <p className="title">Front-end Web Development</p>
-          <p className="techno">Angulat | React.js | css | scss | TypeScript</p>
+          <p className="techno">Angular | React.js | css | scss | TypeScript</p>
         </div>
         <div className="back">
           <p className="title">Back-End Web Development</p>
