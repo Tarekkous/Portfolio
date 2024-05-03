@@ -1,36 +1,41 @@
-.skills {
-    background-color: #121723;
+.container {
     margin: 0;
     padding: 0;
-    min-height: calc(100vh - 100px);
-    height: 100%;
-    overflow-y: scroll;
-    margin: 2%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-    .title {
-        color: #fff;
-        letter-spacing: 2px;
-        font-size: 20px;
-        text-transform: uppercase;
+    .skills {
+        background-color: #121723;
+        margin: 0;
+        padding: 0;
+        min-height: calc(100vh - 100px);
+        height: 100%;
+        overflow-y: scroll;
+        margin: 2%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    
+        .title {
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        .techno {
+            color: gray;
+            font-size: 15px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    
+        span {
+            font-size: 32px;
+            font-weight: 800;
+            color: #375497;
+            font-family: "Inconsolata", monospace;
+            letter-spacing: 5px;
+    
+        }
     }
-    .techno {
-        color: gray;
-        font-size: 15px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-    }
 
-    span {
-        font-size: 32px;
-        font-weight: 800;
-        color: #375497;
-        font-family: "Inconsolata", monospace;
-        letter-spacing: 5px;
-
-    }
 }
 
 .inconsolata {

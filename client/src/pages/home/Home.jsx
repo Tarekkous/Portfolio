@@ -48,9 +48,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <br />
-        <br />
-        <br />
       </div>
       <Experiences />
       <Skills/>
