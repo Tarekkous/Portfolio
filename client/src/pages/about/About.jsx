@@ -28,6 +28,12 @@ const About = () => {
           Perseverance is one of my defining qualities, along with ambition,
           patience, seriousness, adaptability, and an exceptional team spirit.
         </p>
+        <div className="language">
+          <p>Spoken Languages</p>
+          <span>French</span>
+          <span>English</span>
+          <span>Arabic</span>
+        </div>
       </div>
       <div className="stage-cube-cont">
         <div className="cubespinner">
