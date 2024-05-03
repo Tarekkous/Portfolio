@@ -5,22 +5,23 @@ const Skills = () => {
   const skillRef = useRef(null);
 
   useEffect(() => {
+    const skillSection = skillRef.current
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {
           if (e.isIntersecting) {
-            skillRef.current.classList.add("appear")
+            skillSection.classList.add("appear")
           }
         });
       },
       { threshold: 0.2 }
     );
-    if (skillRef.current) {
-      observer.observe(skillRef.current);
+    if (skillSection) {
+      observer.observe(skillSection);
     }
     return () => {
-      if (skillRef.current) {
-        observer.unobserve(skillRef.current); // Assurez-vous de nettoyer correctement
+      if (skillSection) {
+        observer.unobserve(skillSection); // Assurez-vous de nettoyer correctement
       }
     };
   }, []);

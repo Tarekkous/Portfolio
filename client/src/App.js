@@ -6,9 +6,7 @@ import About from "./pages/about/About"
 import Contact from "./pages/contact/Contact"
 import {
   createBrowserRouter,
-  createRoutesFromElements,
   Outlet,
-  Route,
   RouterProvider,
 } from "react-router-dom";
 import  { useEffect, useRef } from "react"

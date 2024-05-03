@@ -1,5 +1,5 @@
-[[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
-force = true
+[build]
+  command = "CI='' npm run build"
+  base = "client/"
+  publish = "client/build"
+
