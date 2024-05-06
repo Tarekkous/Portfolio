@@ -14,7 +14,6 @@
 
         p {
             text-align: justify;
-            min-width: fit-content;
             font-weight: 300;
             font-family: sans-serif;
             color: #fff;
@@ -179,9 +178,13 @@
 }
 
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 890px) {
     .container .text-zone h1 {
         font-size: 32px;
+    }
+    .container .text-zone  {
+        font-size: 15px;
+        width: 45%;
     }
 
     .container .cubespinner .face1,
@@ -192,4 +195,13 @@
     .container .cubespinner .face6 {
         font-size: 60px;
     }
+}
+@media only screen and (max-width: 600px) {
+    .container .text-zone  {
+        font-size: 14px;
+        width: 45%;
+        text-decoration: none;
+    }
+
+ 
 }
