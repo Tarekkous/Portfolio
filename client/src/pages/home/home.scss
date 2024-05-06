@@ -1,16 +1,9 @@
 .container {
 
-    // .section::after {
-    //     content: "";
-    //     position: absolute;
-    //     left: 0;
-    //     right: 0;
-    //     bottom: 0;
-    //     height: 50px; 
-    //     background: linear-gradient(to bottom, rgba(18, 23, 35, 0), #27324c 100%);
-    // }
+ margin: 0;
+ padding: 0;
+
     .home {
-        min-height: calc(100vh - 100px);
         background-color: #121723;
         color: white;
         overflow-y: auto;
@@ -137,6 +130,8 @@
 
 }
 
+
+
 @media only screen and (max-width: 828px) {
     .container .home {
         width: 100%;
@@ -166,9 +161,35 @@
     }
 
     .container .section .home  .technologies {
-        margin-top: 25%;
+        margin-top: 10%;
     }
     .container .section {
-        margin-top: 20%;
+        margin-top: 5%;
+    }
+}
+@media only screen and (max-width: 414px) {
+  
+
+    .container .home .presentation h1,
+    .container .home .presentation h2 {
+        font-size: 21px;
+    }
+
+   
+
+    .container .home .headerBody .picture img {
+        position: absolute;
+        width: 11em;
+        height: 11em;
+        top: 40px;
+        right: 20px;
+
+    }
+
+    .container .section .home  .technologies {
+        margin-top: 8%;
+    }
+    .container .section {
+        margin-top: 4%;
     }
 }

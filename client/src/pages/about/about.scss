@@ -205,3 +205,16 @@
 
  
 }
+@media only screen and (max-width: 520px) {
+    .container .text-zone  {
+        width: 90%;
+        top: 20px;
+        font-size: 17px;
+    }
+    .container .stage-cube-cont {
+        bottom: 10%;
+        right: 30%;
+    }
+}
+
+ 
