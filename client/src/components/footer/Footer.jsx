@@ -28,7 +28,7 @@ const Footer = () => {
       </div>
       <div className="copyrights">
         <div className="logo">
-          <FontAwesomeIcon icon={faCopyright} className="logo-c" />{" "}
+          <FontAwesomeIcon icon={faCopyright} className="logo-c" />
           Copyright-2024
         </div>
         <div className="name">

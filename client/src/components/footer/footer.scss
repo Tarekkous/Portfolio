@@ -9,6 +9,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 0px;
+
     .copyrights {
         display: flex;
         justify-content: center;
@@ -21,31 +22,52 @@
         color: #fff;
 
     }
+
     .logo-c {
         color: white;
     }
+
     .logo {
         display: flex;
         align-items: center;
         gap: 5px;
-        
+
     }
+
     .logoSocial {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-left: 2%;
-        .linkedin svg , .github svg {
+
+        .linkedin svg,
+        .github svg {
             font-size: 20px;
             color: white;
-         }
+        }
+
         //  .linkedin svg:hover , .github svg:hover {
         //     color: gray;
         //  }
     }
 }
+
 @media only screen and (max-width: 820px) {
-   .footer {
-    height: 5em;
-   }
+    .footer {
+        height: 5em;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+
+    .footer .copyrights .logo,
+    .footer .copyrights .name p {
+        font-size: 7px;
+    }
+
+    .footer .logoSocial .linkedin svg,
+    .footer .logoSocial .github svg  {
+        font-size: 13px;
+    }
+
 }
