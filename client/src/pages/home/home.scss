@@ -4,6 +4,7 @@
  padding: 0;
 
     .home {
+        max-height: calc(100vh - 100px);
         background-color: #121723;
         color: white;
         overflow-y: auto;
