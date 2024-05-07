@@ -18,7 +18,7 @@ const Contact = () => {
         'YN7QS6vVPHfXvI5uY'
       ).then(
         () => {
-          alert('Message successfully sent!')
+          alert('Message successfully sent. I will reply to you soon')
           window.location.reload(false)
         },
         () => {
