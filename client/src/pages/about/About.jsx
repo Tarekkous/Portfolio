@@ -16,7 +16,7 @@ const About = () => {
       <div className="text-zone">
         <h1>About Me</h1>
         <p>
-          I am Tarek Koussaier, a 25-year-old application developer, holder of a
+          I am Tarek Koussaier, a 26-year-old application developer, holder of a
           Bachelor's degree (Bac+3/4) in application development certified
           RNCP31678.
         </p>
